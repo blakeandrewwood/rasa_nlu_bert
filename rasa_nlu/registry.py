@@ -24,6 +24,7 @@ from rasa_nlu.extractors.mitie_entity_extractor import MitieEntityExtractor
 from rasa_nlu.extractors.spacy_entity_extractor import SpacyEntityExtractor
 from rasa_nlu.featurizers.count_vectors_featurizer import \
     CountVectorsFeaturizer
+from rasa_nlu.featurizers.universal_sentence_encoder_featurizer import UniversalSentenceEncoderFeaturizer
 from rasa_nlu.featurizers.mitie_featurizer import MitieFeaturizer
 from rasa_nlu.featurizers.ngram_featurizer import NGramFeaturizer
 from rasa_nlu.featurizers.regex_featurizer import RegexFeaturizer
@@ -51,6 +52,7 @@ component_classes = [
     CompositeEntityExtractor,
     EntitySynonymMapper,
     SpacyFeaturizer, MitieFeaturizer, NGramFeaturizer, RegexFeaturizer,
+    UniversalSentenceEncoderFeaturizer,
     CountVectorsFeaturizer,
     BertVectorsFeaturizer,
     MitieTokenizer, SpacyTokenizer, WhitespaceTokenizer, JiebaTokenizer,
